@@ -32,19 +32,16 @@ public class App {
       player2.playerTurn();
       choice4.setName(console.readLine());
 
+      System.out.println("And whose idea was it to use the app?");
+      System.out.println("...cuz they totes get an extra turn..");
+      String wildCard = console.readLine();
+      if (wildCard.equals(player1.name)){
+        player1.playerTurn();
+      } else {
+        player2.playerTurn();
+      }
 
 
-
-
-      // System.out.println("Please name your first choice");
-      // choice1.setName(console.readLine());
-      // System.out.println("Please name your second choice");
-      // choice2.setName(console.readLine());
-      // System.out.println("Please name your third choice");
-      // choice3.setName(console.readLine());
-      // System.out.println("Please name your fourth choice");
-      // choice4.setName(console.readLine());
-      System.out.println("Please name your fifth choice");
       choice5.setName(console.readLine());
 
       Choice result = decisionTime.decision(choice1, choice2, choice3, choice4, choice5);
