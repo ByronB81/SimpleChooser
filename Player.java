@@ -2,6 +2,7 @@ public class Player {
   String name;
   Choice playerChoice1;
   Choice playerChoice2;
+  boolean playerTurn = false;
 
   public void setName(String nameSetter){
     this.name = nameSetter;
