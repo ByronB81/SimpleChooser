@@ -3,6 +3,7 @@ import java.io.Console;
 public class Chooser {
   public static void main(String[] args){
     Console console = System.console();
+    Game decisionTime = new Game();
 
     Choice choice1 = new Choice();
     Choice choice2 = new Choice();
@@ -15,11 +16,11 @@ public class Chooser {
     choice1.name = choice1Input;
     choice2.name = choice2Input;
 
-    //decision(choice1, choice2);
+    Choice result = decisionTime.decision(choice1, choice2);
 
 
     System.out.println("Choice Made!");
-    System.out.println(choice1.bark());
+    System.out.println(result.name);
 
   }
 }
