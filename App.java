@@ -22,14 +22,28 @@ public class App {
       System.out.println("What is player 2's name?");
       player2.setName(console.readLine());
 
-      System.out.println("Please name your first choice");
+
+      player1.playerTurn();
       choice1.setName(console.readLine());
-      System.out.println("Please name your second choice");
+      player2.playerTurn();
       choice2.setName(console.readLine());
-      System.out.println("Please name your third choice");
+      player1.playerTurn();
       choice3.setName(console.readLine());
-      System.out.println("Please name your fourth choice");
+      player2.playerTurn();
       choice4.setName(console.readLine());
+
+
+
+
+
+      // System.out.println("Please name your first choice");
+      // choice1.setName(console.readLine());
+      // System.out.println("Please name your second choice");
+      // choice2.setName(console.readLine());
+      // System.out.println("Please name your third choice");
+      // choice3.setName(console.readLine());
+      // System.out.println("Please name your fourth choice");
+      // choice4.setName(console.readLine());
       System.out.println("Please name your fifth choice");
       choice5.setName(console.readLine());
 

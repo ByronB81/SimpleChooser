@@ -16,4 +16,8 @@ public class Player {
     this.playerChoice2 = choiceSetter;
   }
 
+  public void playerTurn(){
+    System.out.println(this.name + " make a choice.");
+  }
+
 }
