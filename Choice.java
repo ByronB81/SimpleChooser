@@ -12,4 +12,8 @@ public class Choice {
       return choice1;
     }
   }
+
+  public static String bark(){
+    return "Bark bark";
+  }
 }
