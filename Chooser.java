@@ -15,11 +15,11 @@ public class Chooser {
     choice1.name = choice1Input;
     choice2.name = choice2Input;
 
-    String result = decision();
+    String result = decision(choice1, choice2);
 
 
     System.out.println("Choice Made!");
-    System.out.println("You have chosen " + choice1.name + " or " + choice2.name);
+    System.out.println("You have chosen " + result);
 
   }
 }
