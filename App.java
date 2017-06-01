@@ -1,4 +1,5 @@
 import java.io.Console;
+import java.util.concurrent.TimeUnit;
 
 public class App {
   public static void main(String[] args){
@@ -24,6 +25,9 @@ public class App {
     System.out.println("+---------------------------+");
     System.out.println("+===========================+");
     System.out.println();
+
+    decisionTime.chill3();
+
     System.out.println("I'm here to help indecisive people make choices");
     System.out.println("but first...");
     System.out.println();
@@ -37,6 +41,9 @@ public class App {
 
     while (appRunning){
       System.out.println("LET'S MAKE SOME CHOICES!!!");
+
+      decisionTime.chill1();
+
       player1.playerTurn();
       choice1.setName(console.readLine());
       player2.playerTurn();
@@ -45,6 +52,8 @@ public class App {
       choice3.setName(console.readLine());
       player2.playerTurn();
       choice4.setName(console.readLine());
+
+      decisionTime.chill2();
 
       System.out.println();
       System.out.println("And whose idea was it to use this awesome app?");
@@ -64,22 +73,33 @@ public class App {
       System.out.println();
       System.out.println("Good choices... let me think about it");
       System.out.println();
+      decisionTime.chill1();
       System.out.println("##");
+      decisionTime.chill1();
       System.out.println("####");
+      decisionTime.chill1();
       System.out.println("######");
+      decisionTime.chill1();
       System.out.println("########");
+      decisionTime.chill1();
       System.out.println("###########");
+      decisionTime.chill1();
       System.out.println("#Choice Made#");
       System.out.println();
+      decisionTime.chill2();
       System.out.println("*******it is time for*******");
       System.out.println();
+      decisionTime.chill3();
       System.out.println(result.name.toUpperCase() +  " " + result.name.toUpperCase() + " " + result.name.toUpperCase());
       System.out.println();
+      decisionTime.chill2();
       System.out.println("That wasn't so hard, was it?");
       System.out.println();
+      decisionTime.chill2();
       System.out.println("          8====D   O        ");
       System.out.println();
       System.out.println();
+      decisionTime.chill3();
       System.out.println("Would you like to play again or quit?");
       String appNav = console.readLine();
       if (appNav.equals("quit")){

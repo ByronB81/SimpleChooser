@@ -18,4 +18,34 @@ public class Game {
     }
   }
 
+  public void chill1() {
+
+    try {
+      Thread.sleep(500);                 //1000 milliseconds is one second.
+    } catch(InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+
+  }
+
+  public void chill2() {
+
+    try {
+      Thread.sleep(1000);                 //1000 milliseconds is one second.
+    } catch(InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+
+  }
+
+  public void chill3() {
+
+    try {
+      Thread.sleep(3000);                 //1000 milliseconds is one second.
+    } catch(InterruptedException ex) {
+      Thread.currentThread().interrupt();
+    }
+
+  }
+
 }
