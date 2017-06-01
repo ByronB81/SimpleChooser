@@ -19,7 +19,7 @@ public class App {
 
     System.out.println("+===========================+");
     System.out.println("+---------------------------+");
-    System.out.println("+===Decision  Indecisions===+");
+    System.out.println("+===Indecision Decisions====+");
     System.out.println("+-----------by--------------+");
     System.out.println("+=======Byron=Blocker=======+");
     System.out.println("+---------------------------+");
